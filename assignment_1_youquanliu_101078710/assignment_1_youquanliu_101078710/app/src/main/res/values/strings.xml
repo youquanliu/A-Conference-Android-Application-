@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Assignment_1_YouquanLiu_101078710</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Log in</string>
+    <string name="textViewTwitter">
+    <a href="https://twitter.com">Register By Twitter</a>
+    </string>
+
+    <string name="back_attendees">Back</string>
+    <string name="back_general_schedule">Back</string>
+    <string name="back_my_schedule">Back</string>
+    <string name="back_speakers">Back</string>
+    <string name="back_sponsors">Back</string>
+
+    <string name="attendees">Attendees page</string>
+    <string name="general_schedule">General Schedule Page</string>
+    <string name="my_schedule">My Schedule Page</string>
+    <string name="speakers">Speakers Page</string>
+    <string name="sponsors">Sponsors Page</string>
+
+    <string name="btn_attendees">Attendees</string>
+    <string name="btn_general_schedule">General Schedule</string>
+    <string name="btn_my_schedule">My Schedule</string>
+    <string name="btn_speakers">Speakers</string>
+    <string name="btn_sponsors">Sponsors</string>
+    <string name="btn_maps">Maps</string>
+
+    <string name="logo">logo</string>
+    <string name="twitterLogo">twitterLogo</string>
+</resources>
