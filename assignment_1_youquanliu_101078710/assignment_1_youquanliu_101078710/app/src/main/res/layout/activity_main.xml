@@ -57,7 +57,8 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="86dp"
         android:text="@string/login"
-        android:textColor="#fff" />
+        android:textColor="#fff"
+        />
 
     <TextView
         android:id="@+id/textViewTwitter"
@@ -95,31 +96,5 @@
         android:layout_marginTop="365dp"
         android:text="" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="231dp"
-        android:layout_marginLeft="231dp"
-        android:layout_marginTop="13dp"
-
-        android:onClick="saveInfo"
-        android:text="Save" />
-
-    <Button
-        android:id="@+id/show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_marginStart="109dp"
-        android:layout_marginLeft="109dp"
-        android:layout_marginTop="12dp"
-        android:onClick="displayData"
-        android:text="show" />
 
 </RelativeLayout>

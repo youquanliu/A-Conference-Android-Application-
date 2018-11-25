@@ -1,21 +1,28 @@
 package com.example.a101078710.assignment_1_youquanliu_101078710;
-
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.net.Uri;
+import android.widget.TextView;
 
 public class Home extends AppCompatActivity {
 
-//    static final int MY_CONTACT_TAG = 2;
+    TextView tvGo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        tvGo = findViewById(R.id.tvData);
+
+        SharedPreferences result = getSharedPreferences("data", Context.MODE_PRIVATE);
+        String name = result.getString("username","");
+        tvGo.setText("welcome " + name + "!");
 
         //The map button
        findViewById(R.id.btnMaps).setOnClickListener(new View.OnClickListener() {
@@ -68,15 +75,7 @@ public class Home extends AppCompatActivity {
             }
         });
 
-//       //The Attendees button
-//       findViewById(R.id.btnAttendees).setOnClickListener(new View.OnClickListener() {
-//           @Override
-//           public void onClick(View v) {
-//               Intent i = new Intent(Intent.ACTION_PICK, Uri.parse("content://contacts"));
-//               i.setType(ContactsContract.CommonDataKinds.Phone.CONTENT_TYPE);
-//               startActivityForResult(i,MY_CONTACT_TAG);
-//           }
-//       });
+
     }
 
     @Override
